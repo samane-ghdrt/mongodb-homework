@@ -1,11 +1,11 @@
 const mongoose=require('mongoose');
 
-const users=new mongoose.schema({
+const userschema=new mongoose.schema({
 age:{type:number},
 Gender:{type:String},
 Experience:{type:number},
 })
-// const user=mongoose.
+export const user=mongoose.Model("user",userschema)
 // - **String** `name`: Name of the faculty member.
 //      - **Number** `age`: Age of the faculty member.
 //      - **String** `gender`: Gender of the faculty member.
