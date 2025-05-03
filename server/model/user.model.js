@@ -1,13 +1,11 @@
 const mongoose=require('mongoose');
-const { type } = require('os');
 
 const users=new mongoose.schema({
-age:{number},
-Gender:{stringify},
-Experience:{number},
-type
+age:{type:number},
+Gender:{type:String},
+Experience:{type:number},
 })
-
+// const user=mongoose.
 // - **String** `name`: Name of the faculty member.
 //      - **Number** `age`: Age of the faculty member.
 //      - **String** `gender`: Gender of the faculty member.
