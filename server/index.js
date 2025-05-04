@@ -9,7 +9,7 @@ rout.get();
 
 const start=async()=>{
     try {
-        await connectDb(process.env.)
+        await connectDb(process.env.MONGOOSE.DB)
    ap
    
     } catch (error) {
