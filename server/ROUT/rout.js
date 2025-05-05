@@ -1,7 +1,10 @@
 const express=require('express');
-const rout =require(express.Router());
+const rout =express.Router();
 const{addFacultyMember,getAllFacultyMembers,deleteFacultyMember}=require('../controler/controler.js');
 
 
 rout.get('/',getAllFacultyMembers);
-rout.post()
+rout.post('/',addFacultyMember);
+rout.delete('/:id',deleteFacultyMember);
+
+export default rout;

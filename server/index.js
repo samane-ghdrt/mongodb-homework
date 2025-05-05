@@ -1,11 +1,15 @@
-const express=require('express');
-const rout=express.Router();
+require('dotenv').config;
 
-const {connectDb}=require('./db/connwctdb')
+const express=require('express');
+const {rout}=require('./ROUT/rout.js'); 
+
+const app=express();
+
+const {connectDb}=require('./db/connwctdb');
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
- 
-rout.get();
+
+app.use('/member',rout);
 
 const start=async()=>{
     try {
@@ -17,4 +21,4 @@ const start=async()=>{
         
     }
 }
- start()
+ start();
