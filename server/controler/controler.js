@@ -1,6 +1,6 @@
 import { log } from 'console';
 
-const {user}=require('../model/user.model.js');
+import {user} from '../model/user.model.js';
 
 export const getAllFacultyMembers=async (req,res)=>{
 try {

@@ -1,6 +1,6 @@
-const express=require('express');
+import express from 'express';
 const rout =express.Router();
-const{addFacultyMember,getAllFacultyMembers,deleteFacultyMember}=require('../controler/controler.js');
+import {addFacultyMember,getAllFacultyMembers,deleteFacultyMember} from '../controler/controler.js';
 
 
 rout.get('/',getAllFacultyMembers);

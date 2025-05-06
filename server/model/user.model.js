@@ -1,11 +1,11 @@
-const mongoose=require('mongoose');
+import mongoose from 'mongoose';
 
-const userschema=new mongoose.schema({
-age:{type:number},
+const userschema=new mongoose.Schema({
+age:{type:Number},
 Gender:{type:String},
-Experience:{type:number},
+Experience:{type:Number},
 })
-export const user=mongoose.Model("user",userschema)
+export const user=mongoose.model("user",userschema)
 // - **String** `name`: Name of the faculty member.
 //      - **Number** `age`: Age of the faculty member.
 //      - **String** `gender`: Gender of the faculty member.

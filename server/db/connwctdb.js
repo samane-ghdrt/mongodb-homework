@@ -1,6 +1,6 @@
-const mongoose =require("mongoose");
+import mongoose from "mongoose";
 
 const connectDb=(uri)=>{
     return mongoose.connect(uri);
 };
-module.exports={connectDb};
+export default connectDb;

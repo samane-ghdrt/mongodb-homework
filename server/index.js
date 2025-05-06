@@ -1,11 +1,11 @@
-require('dotenv').config;
+import dotenv from'dotenv/config';
 
-const express=require('express');
-const {rout}=require('./ROUT/rout.js'); 
+import express from 'express';
+import rout from './ROUT/rout.js'; 
 
 const app=express();
 
-const {connectDb}=require('./db/connwctdb');
+import connectDb from './db/connwctdb.js';
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
